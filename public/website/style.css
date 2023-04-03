@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.head{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(204, 202, 202);
+}
+.head div h2{
+    font-size: 15px;
+}
+.head div:last-child{
+    width: 600px;
+    height: 100px;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(245, 242, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    width: 450px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    padding: 10px;
+    position: relative;
+}
+.search label{
+    width: 50px;
+    position: absolute;
+    margin-left: 420px;
+    color: gray;
+    /* border-left: .5px solid gray; */
+}
+.search label::before{
+    content: "|";
+    padding-right: 5px;
+}
+
+.search label:hover{
+    color: black;
+    cursor: pointer;
+}
+.navbar{
+    background-color: black;
+
+}
+.navbar-brand{
+    color: white !important;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 50px;
+}
+.navbar li a{
+    color: white;
+    text-transform: capitalize;
+}
+.navbar li a:hover{
+    color: blueviolet;
+}
+
+.active{
+    color: blueviolet !important;
+}
+.carousel{
+    height: 72vh;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    height: 500px;
+}
+.carousel-caption{
+    margin-bottom: 100px;
+    /* border: 2px solid black; */
+    background-color: blueviolet;
+}
+.collection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.collection .coll-left h5{
+    color: blueviolet;
+}
+.collection p{
+    width: 80%;
+}
+.collection .coll-img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.collection .coll-img img{
+    width: 600px;
+    height: 350px;
+    padding: 10px;
+}
+.collection .shopnow{
+    width: 200px;
+    height: 50px;
+    border: .5px solid gray;
+}
+.feuture{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.feuture div:first-child{
+    width: 100%;
+}
+.feuture-list ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 350px;
+}
+.feuture-list ul li{padding: 10px;text-align: center;}
+.feuture-cards{
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feuture-cards .card{
+    margin-top: 10px !important;
+}
+.feuture-cards .card img{
+    height: 200px;
+}
+.title-model{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    margin-top: 10px;
+}
+.title-model .women{
+    background: url('https://th.bing.com/th/id/R.26acc842537d13a69672daeae1d77987?rik=hiZ%2fBUBBIi54Ew&pid=ImgRaw&r=0');
+    background-size: 100% 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+.title-model .women div{
+    padding-right: 50px;
+}
+
+.title-model .man{
+    background: url('https://th.bing.com/th/id/R.f576130c2e845b4e81ab219340537ab7?rik=3qvdOkaChtMe0g&pid=ImgRaw&r=0');
+    background-size: 100% 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.title-model .man h4 span{
+    color: blueviolet;
+}
+
+.trending{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    /* background-color: aqua; */
+}
+.trending div{
+    width: 100%;
+}
+.load-more{
+    width: 200px;
+    height: 50px;
+    border: .5px solid rgb(15, 14, 14);
+    margin: 20px;
+    background-color: white;
+}
+.content{
+    width: 100%;
+    height: 60vh;
+    background: url('https://th.bing.com/th/id/R.a4ead1524a1b6280e3ad01461c239d51?rik=TQ9sAqO0saarzQ&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2017%2f11%2f17%2f240459-men.jpg&ehk=wU8S%2fCdakSQkRH8M2kh1eQfwtOCtWc%2b7x%2b%2f7iTjDhgQ%3d&risl=&pid=ImgRaw&r=0');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content h2{
+   color: blueviolet;
+   font-size: 40px;
+   font-weight: bold;
+   width: 100%;
+   text-align: center;
+}
+.content h3{
+    width: 90%;
+    color: rgb(249, 247, 247);
+}
+.title-content h2{
+    color: wheat;
+}
+.blog div h2{
+    text-align: center;
+}
+.footer{
+    background-color: rgb(25, 24, 24);
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.footer div .footer-cards{
+    width: 25%;
+    height: auto;
+    margin-left: 20px;
+}
+.footer div h2{
+    color: white;
+}
+.footer div .footer-list ul{
+    list-style-type: none;
+    /* width: 100%; */
+    /* height: 50vh; */
+}
+.footer div .footer-list ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(170, 168, 168);
+    text-decoration: none;
+}
+.footer div .footer-list ul li a:hover{
+    color: white;
+}
+.footer-form{
+    margin-right: 20px;
+}
+.footer-form div input{
+   width: 220px;
+   padding: 10px;
+   outline: none;
+}
+.footer-form div button{
+    width: 220px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+.footer-form div .fa-brands{
+    font-size: 35px;
+    margin-top: 10px;
+}
+.footer-form div .fa-square-facebook:hover{
+    color: blue;
+    cursor: pointer;
+}
+.footer-form div .fa-square-twitter:hover{
+    color: rgb(0, 60, 255);
+    cursor: pointer;
+}
+.footer-form div .fa-square-behance:hover{
+    color: red;
+    cursor: pointer;
+}
+.footer-form div .fa-youtube:hover{
+    color: red;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+}
+footer div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+footer .footer-icons{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-icons i{
+    padding: 10px;
+    font-size: 50px;
+}
+footer .footer-icons .fa-cc-visa{
+    color: chocolate;
+}
+footer .footer-icons .fa-cc-mastercard{
+    color: rgb(117, 9, 9);
+}
+footer .footer-icons .fa-cc-paypal{
+    color: rgb(35, 48, 238);
+}
+
+@media (max-width: 349px) {
+    .head,div h2{
+        width: 100%;
+        font-size: 3px !important;
+    }
+    .search input{
+        width: 200px !important;
+    }
+    .search label{
+        margin-right: 300px !important;
+    }
+    .collection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100% !important;
+        height: auto;
+        margin-top: 10px;
+    }
+    .coll-left img{
+        width: 50px !important;
+        height: 200px  !important;
+    }
+    .coll-left{
+        width: 100%;
+        text-align: center;
+        font-size: 5px !important;
+    }
+    .coll-left{
+        width: 100% !important;
+    }
+    .footer{
+        font-size: 5px !important;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .footer-cards{
+        width: 7% !important;
+
+    }
+    .footer-list ul li a{
+        font-size: 3px !important;
+    }
+    .footer-form{
+        font-size: 4px;
+        width: 7% !important;
+    }
+    .collection .coll-img{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 200px;
+    }
+    .collection .coll-img img{
+        width: 50px !important;
+        height: 50px !important;
+        padding: 10px;
+    }
+
+}
